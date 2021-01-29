@@ -32,13 +32,13 @@ function setup() {
 
 function draw() {
   background("black");
- 
+  music.play();
   if(keyDown("left")){
     fairy.x=fairy.x-5;
   }
   if(keyDown("right")){
     fairy.x=fairy.x+5;
-    music.play();
+   
       }
       if(keyDown("down")){
        star.velocityY=3;
