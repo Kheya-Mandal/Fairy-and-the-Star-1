@@ -27,12 +27,15 @@ function setup() {
   star.addImage(starImg);
   star.scale=0.15;
 
+    if(keyDown("right")){
+       music.play();
+    }
 }
 
 
 function draw() {
   background("black");
-  music.play();
+  
   if(keyDown("left")){
     fairy.x=fairy.x-5;
   }
